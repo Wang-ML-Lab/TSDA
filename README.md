@@ -32,6 +32,7 @@ For classical domain adaptation methods such as DANN, they enforce uniform align
 
 ## Theorem (Informal, See Formal Definition in the Paper)
 <img align="right" src="fig/non_informative_taxonomy.png" width="43%">
+
 * The introduction of the taxonomist prevents the discriminator from enforcing uniform alignment.
 * TSDA can **recover DANN** with a non-informative taxonomy (see Figure x).
 * DANN with weighted pairwise discriminators can only produce uniform alignment.
