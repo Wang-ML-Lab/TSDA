@@ -35,7 +35,7 @@ For classical domain adaptation methods such as DANN, they enforce uniform align
 *Figure x. A non-informative taxonomy.* -->
 <p align="right">
 <figure>
-  <img src="fig/non_informative_taxonomy.png" alt="my alt text"/>
+  <img src="fig/non_informative_taxonomy.png" alt="my alt text" width="36%"/>
   <figcaption>Figure x. A non-informative taxonomy.</figcaption>
 </figure>
 </p>
