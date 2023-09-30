@@ -20,7 +20,7 @@ Tianyi Liu*, Zihao Xu*, Hao He, Guang-Yuan Hao, Guang-He Lee, Hao Wang<br>
 For classical domain adaptation methods such as DANN, they enforce uniform alignment to boost the generalization ability of models. However, recent studies have shown that, such uniform alignment can harm domain adaptation performance. To deal with this problem, we incorporate domain taxonomy into domain adaptation process. With domain taxonomy, we can **break** the uniform alignment in domain adaptation. The equilibrium recovers the classic adversarial domain adaptation’s solution if given a non-informative domain taxonomy (e.g., a flat taxonomy where all leaf nodes connect to the root node) while yielding non-trivial results with other taxonomies. See Figure 1 for an example.
 
 <p align="center">
-<img src="fig/example_taxonomy.png" alt="" data-canonical-src="fig/example_taxonomy.png" width="70%"/>
+<img src="fig/example_taxonomy.png" alt="" data-canonical-src="fig/example_taxonomy.png" width="93%"/>
 </p>
 <p>
     <em>Figure 1. An example of using domain taxonomy to break the uniform alignment. For our model, the middle representation for basset and Beagle should be more similar than the one for basset and tabby.</em>
@@ -29,7 +29,7 @@ For classical domain adaptation methods such as DANN, they enforce uniform align
 ## Method Overview
 We build on the classic adversarial framework and introduce a novel taxonomist, which competes with the adversarial discriminator to preserve the taxonomy information. Encoder E, predictor F, discriminator D and taxonomist T play a min-max game. The discriminator tries to remove the domain-related information by enforcing uniform alignment on the encodings *e*, while the taxonomist tries to reconstruct the domain taxonomy based on the encodings. The balance between the discriminator and the taxonomist will make the encoding preserve necessary domain information. To facilitate such process, we transform the domain taxonomy to a domain distance matrix *A* and input it into the encoder. We highlight the key difference between the traditional model and our model in red. 
 <p align="center">
-<img src="fig/model.png" alt="" data-canonical-src="fig/model.png" width="93%"/>
+<img src="fig/model.png" alt="" data-canonical-src="fig/model.png" width="80%"/>
 </p>
 
 
