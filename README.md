@@ -71,7 +71,7 @@ In the directory of each dataset, there are detailed steps on how to train VDI a
 
 #### CUB-DT
 <p align="center">
-<img src="fig/exp_result_cub.png" alt="" data-canonical-src="fig/exp_result_cub.png" width="80%"/>
+<img src="fig/exp_result_cub.png" alt="" data-canonical-src="fig/exp_result_cub.png" width="95%"/>
 </p>
 
 
