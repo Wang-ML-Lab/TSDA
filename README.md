@@ -31,7 +31,7 @@ For classical domain adaptation methods such as DANN, they enforce uniform align
 
 
 ## Theorem (Informal, See Formal Definition in the Paper)
-<img align="right" src="fig/non_informative_taxonomy_with_title.png" width="36%">
+<img align="right" src="fig/non_informative_taxonomy_with_title.png" width="33%">
 <!-- *Figure x. A non-informative taxonomy.* -->
 <!-- <p align="right"> -->
 <!-- <figure>
