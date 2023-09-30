@@ -59,6 +59,21 @@ In the directory of each dataset, there are detailed steps on how to train VDI a
 * [Experiments on Real Datasets](Real)
 
 ## Quantitative Result
+#### Toy Datasets: DT-14 and DT-40
+<p align="center">
+<img src="fig/exp_result_toy.png" alt="" data-canonical-src="fig/fig/exp_result_toy.png" width="80%"/>
+</p>
+
+#### ImageNet-Attribute-DT
+<p align="center">
+<img src="fig/exp_result_imagenet.png" alt="" data-canonical-src="fig/exp_result_imagenet.png" width="95%"/>
+</p>
+
+#### CUB-DT
+<p align="center">
+<img src="fig/exp_result_cub.png" alt="" data-canonical-src="fig/exp_result_cub.png" width="80%"/>
+</p>
+
 
 
 ## Also Check Our Relevant Work
