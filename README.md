@@ -18,5 +18,5 @@ Tianyi Liu*, Zihao Xu*, Hao He, Guang-Yuan Hao, Guang-He Lee, Hao Wang<br>
 Domain adaptation aims to mitigate distribution shifts among different domains. However, traditional formulations are mostly limited to categorical domains, greatly simplifying nuanced domain relationships in the real world. In this work, we tackle a generalization with taxonomystructured domains, which formalizes domains with nested, hierarchical similarity structures such as animal species and product catalogs. We build on the classic adversarial framework and introduce a novel taxonomist, which competes with the adversarial discriminator to preserve the taxonomy information. The equilibrium recovers the classic adversarial domain adaptation’s solution if given a non-informative domain taxonomy (e.g., a flat taxonomy where all leaf nodes connect to the root node) while yielding non-trivial results with other taxonomies.
 
 <p align="center">
-<img src="fig/example_taxonomy.jpg" alt="test" data-canonical-src="fig/visualize_tpt_48.jpg" width="93%"/>
+<img src="fig/example_taxonomy.png" alt="test" data-canonical-src="fig/example_taxonomy.png" width="93%"/>
 </p>
