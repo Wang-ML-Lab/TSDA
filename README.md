@@ -27,7 +27,10 @@ For classical domain adaptation methods such as DANN, they enforce uniform align
 </p>
 
 ## Method Overview
- We build on the classic adversarial framework and introduce a novel taxonomist, which competes with the adversarial discriminator to preserve the taxonomy information. 
+We build on the classic adversarial framework and introduce a novel taxonomist, which competes with the adversarial discriminator to preserve the taxonomy information. Encoder E, predictor F, discriminator D and taxonomist T play a min-max game. The discriminator tries to remove the domain-related information by enforcing uniform alignment on the encodings *e*, while the taxonomist tries to reconstruct the domain taxonomy based on the encodings. The balance between the discriminator and the taxonomist will make the encoding preserve necessary domain information. To facilitate such process, we transform the domain taxonomy to a domain distance matrix *A* and input it into the encoder. We highlight the key difference between the traditional model and our model in red. 
+<p align="center">
+<img src="fig/model.png" alt="" data-canonical-src="fig/model.png" width="93%"/>
+</p>
 
 
 ## Theorem (Informal, See Formal Definition in the Paper)
@@ -61,7 +64,7 @@ In the directory of each dataset, there are detailed steps on how to train VDI a
 ## Quantitative Result
 #### Toy Datasets: DT-14 and DT-40
 <p align="center">
-<img src="fig/exp_result_toy.png" alt="" data-canonical-src="fig/fig/exp_result_toy.png" width="80%"/>
+<img src="fig/exp_result_toy.png" alt="" data-canonical-src="fig/fig/exp_result_toy.png" width="75%"/>
 </p>
 
 #### ImageNet-Attribute-DT
