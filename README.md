@@ -64,7 +64,7 @@ In the directory of each dataset, there are detailed steps on how to train VDI a
 ## Quantitative Result
 #### Toy Datasets: DT-14 and DT-40
 <p align="center">
-<img src="fig/exp_result_toy.png" alt="" data-canonical-src="fig/fig/exp_result_toy.png" width="75%"/>
+<img src="fig/exp_result_toy.png" alt="" data-canonical-src="fig/fig/exp_result_toy.png" width="70%"/>
 </p>
 
 #### ImageNet-Attribute-DT
