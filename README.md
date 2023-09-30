@@ -17,7 +17,7 @@ Tianyi Liu*, Zihao Xu*, Hao He, Guang-Yuan Hao, Guang-He Lee, Hao Wang<br>
 * [Reference](#reference)
 
 ## Brief Introduction for TSDA
-For classical domain adaptation methods such as DANN, they enforce uniform alignment to boost the generalization ability of models. However, recent studies have shown that, such uniform alignment can harm domain adaptation performance. To deal with this problem, we incorporate domain taxonomy into domain adaptation process. With domain taxonomy, we can break the uniform alignment in domain adaptation. The equilibrium recovers the classic adversarial domain adaptation’s solution if given a non-informative domain taxonomy (e.g., a flat taxonomy where all leaf nodes connect to the root node) while yielding non-trivial results with other taxonomies. See Figure 1 for an example.
+For classical domain adaptation methods such as DANN, they enforce uniform alignment to boost the generalization ability of models. However, recent studies have shown that, such uniform alignment can harm domain adaptation performance. To deal with this problem, we incorporate domain taxonomy into domain adaptation process. With domain taxonomy, we can **break** the uniform alignment in domain adaptation. The equilibrium recovers the classic adversarial domain adaptation’s solution if given a non-informative domain taxonomy (e.g., a flat taxonomy where all leaf nodes connect to the root node) while yielding non-trivial results with other taxonomies. See Figure 1 for an example.
 
 <p align="center">
 <img src="fig/example_taxonomy.png" alt="" data-canonical-src="fig/example_taxonomy.png" width="93%"/>
@@ -31,17 +31,17 @@ For classical domain adaptation methods such as DANN, they enforce uniform align
 
 
 ## Theorem (Informal, See Formal Definition in the Paper)
-<!-- <img align="right" src="fig/non_informative_taxonomy.png" width="36%">
-*Figure x. A non-informative taxonomy.* -->
+<img align="right" src="fig/non_informative_taxonomy.png" width="36%">
+<!-- *Figure x. A non-informative taxonomy.* -->
 <!-- <p align="right"> -->
-<figure>
+<!-- <figure>
   <img align="right" src="fig/non_informative_taxonomy.png" alt="my alt text" width="36%"/>
   <figcaption>Figure x. A non-informative taxonomy.</figcaption>
 </figure>
-<!-- </p> -->
+</p> -->
 
 * The introduction of the taxonomist prevents the discriminator from enforcing uniform alignment.
-* TSDA can **recover DANN** with a non-informative taxonomy (see Figure x).
+* TSDA can **recover DANN** with a non-informative taxonomy  (e.g., a flat taxonomy where all leaf nodes connect to the root node). Refer to the right Figure for an example of non-informative taxonomy.
 * DANN with weighted pairwise discriminators can only produce uniform alignment.
 
 
