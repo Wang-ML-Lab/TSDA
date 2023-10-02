@@ -88,10 +88,14 @@ In the directory of each dataset, there are detailed steps on how to train TSDA.
 <img src="fig/taxonomy_imagenet.png" alt="" data-canonical-src="fig/exp_result_imagenet.png" width="95%"/>
 </p>
 
+*Domain taxonomy of **ImageNet-Attribute-DT** with 11 domains shown as leaf nodes. Note that leaf nodes are marked with black base and white text. Non-leaf nodes and their connection to leaf nodes are obtained from WordNet.*
+
 #### CUB-DT
 <p align="center">
 <img src="fig/taxonomy_cub.png" alt="" data-canonical-src="fig/exp_result_cub.png" width="93%"/>
 </p>
+
+*Domain taxonomy of **CUB-DT** with $18$ domains shown as leaf nodes. Note that leaf nodes are marked with black base and white text. For clarity we abbreviate domain names in the figure: Least Auklet (**LA**), Parakeet Auklet (**PA**), Red Winged Blackbird (**RWB**), Yellow Headed Blackbird (**YHB**), Lazuli Bunting (**LB**), Painted Bunting (**PB**), Bronzed Cowbird (**BC**), Shiny Cowbird (**SC**), Loggerhead Shrike (**LS**), Great Grey Shirke (**GGS**), Baird Sparrow (**BS**), Henslow's Sparrow (**HS**), Nelson's Sparrow (**NS**), Seaside Sparrow (**SS**), Canada Warbler (**CW**), Wilson's Warbler (**WW**), Chestnut-sided Warbler (**CSW**), Myrtle Warbler (**MW**).*
 
 
 
@@ -100,13 +104,15 @@ In the directory of each dataset, there are detailed steps on how to train TSDA.
 <p align="center">
 <img src="fig/vis_encode_imagenet.png" alt="" data-canonical-src="fig/exp_result_imagenet.png" width="95%"/>
 </p>
-*TSDA's learned encoding e for 11 domains on ImageNet-Attribute-DT. Domains related to "dogs", e.g., "Basset" and "Beagle", contain encodings in the middle, while domains related to "cats", e.g., "Tabby“, contain encodings on both sides; this is consistent with the domain taxonomy in Figure x. Each domain contains 2 clusters because of the binary classification task.*
+
+*TSDA's learned encoding e for 11 domains on ImageNet-Attribute-DT. Domains related to "dogs", e.g., "Basset" and "Beagle", contain encodings in the middle, while domains related to "cats", e.g., "Tabby“, contain encodings on both sides; this is consistent with the domain taxonomy of Imagenet-Attribute-DT. Each domain contains 2 clusters because of the binary classification task.*
 
 #### CUB-DT
 <p align="center">
 <img src="fig/vis_encode_cub.png" alt="" data-canonical-src="fig/exp_result_cub.png" width="95%"/>
 </p>
-*TSDA's learned encoding e for 18 domains on CUB-DT. Domain "Least Auklet" (LA) and domain "Parakeet Auklet" (PA) are very different from all others in the domain taxonomy (Figure ), correspondingly their encodings are on the far right side, with most of them in the bottom-right corner. Note that each domain has 2 clusters associated with the binary classification labels*
+
+*TSDA's learned encoding e for 18 domains on CUB-DT. Domain "Least Auklet" (LA) and domain "Parakeet Auklet" (PA) are very different from all others in the domain taxonomy of CUB-DT, correspondingly their encodings are on the far right side, with most of them in the bottom-right corner. Note that each domain has 2 clusters associated with the binary classification labels*
 
 
 ## Also Check Our Relevant Work
