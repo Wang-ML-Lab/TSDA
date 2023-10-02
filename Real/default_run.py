@@ -1,15 +1,27 @@
 import torch
 import numpy as np
 import random
+import argparse
 import pickle
-from hyperopt import fmin, hp, tpe, Trials, space_eval, STATUS_OK
 from utils.utils import *
 import os.path
 from os import path
-# import the experiment setting
+import importlib.util
 
-from configs.config_imagenet_11 import opt
-#from configs.config_cub_18 import opt
+
+# load the config files
+parser = argparse.ArgumentParser(description='Choose the configs to run.')
+parser.add_argument('-c', '--config', type=str, required=True)
+args = parser.parse_args()
+
+use_config_spec = importlib.util.spec_from_file_location(
+    args.config, "configs/{}.py".format(args.config))
+config_module = importlib.util.module_from_spec(use_config_spec)
+use_config_spec.loader.exec_module(config_module)
+opt = config_module.opt
+
+# from configs.config_imagenet_11 import opt
+# #from configs.config_cub_18 import opt
 
 opt.print_switch = True
 #opt.use_visdom = True
