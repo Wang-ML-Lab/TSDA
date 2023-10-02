@@ -1,4 +1,4 @@
-# Taxonomy-Structured Domain Adaptation (TSDA) (under construction)
+# Taxonomy-Structured Domain Adaptation (TSDA)
 This repo contains the code for our ICML 2023 paper:<br>
 **Taxonomy-Structured Domain Adaptation**<br>
 Tianyi Liu*, Zihao Xu*, Hao He, Guang-Yuan Hao, Guang-He Lee, Hao Wang<br>
