@@ -12,6 +12,7 @@ Tianyi Liu*, Zihao Xu*, Hao He, Guang-Yuan Hao, Guang-He Lee, Hao Wang<br>
 * [Theorem (Informal)](#theorem-informal-see-formal-definition-in-the-paper)
 * [Installation](#installation)
 * [Code for Different Datasets](#code-for-different-datasets)
+* [Visualization of Experiment Results on DT-14](#visualization-of-experiment-results-on-dt-14)
 * [Quantitative Results](#quantitative-results)
 * [Related Works](#also-check-our-relevant-work)
 * [Reference](#reference)
@@ -56,12 +57,12 @@ conda install pytorch==1.11.0 torchvision==0.12.0 cudatoolkit=11.3 -c pytorch
 pip install -r requirements.txt
 ```
 
-## Code
+## Code for Different Datasets
 In the directory of each dataset, there are detailed steps on how to train TSDA.
 * [Experiments on Toy Datasets](Toy)
 * [Experiments on Real Datasets](Real)
 
-## Visualization of Experiment Result on DT-14
+## Visualization of Experiment Results on DT-14
 <p align="center">
 <img src="fig/vis_exp_result_dt_14.png" alt="" data-canonical-src="fig/exp_result_imagenet.png" width="95%"/>
 </p>
