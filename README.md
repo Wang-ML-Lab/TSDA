@@ -118,7 +118,7 @@ In the directory of each dataset, there are detailed steps on how to train TSDA.
 
 
 ## Also Check Our Relevant Work
-<span id="paper_1">[1]**Domain-Indexing Variational Bayes: Interpretable Domain Index for Domain Adaptation**<br>
+<span id="paper_1">[1] **Domain-Indexing Variational Bayes: Interpretable Domain Index for Domain Adaptation**<br>
 Zihao Xu*, Guang-Yuan Hao*, Hao He, Hao Wang<br>
 *Eleventh International Conference on Learning Representations, 2023*<br>
 [[Paper](https://arxiv.org/abs/2302.02561)] [[OpenReview](https://openreview.net/forum?id=pxStyaf2oJ5&referrer=%5Bthe%20profile%20of%20Zihao%20Xu%5D(%2Fprofile%3Fid%3D~Zihao_Xu2))] [[PPT](https://shsjxzh.github.io/files/VDI_10_miniutes_2nd_version_to_pdf.pdf)] [[Talk (Youtube)](https://www.youtube.com/watch?v=xARD4VG19ec)] [[Talk (Bilibili)](https://www.bilibili.com/video/BV13N411w734/?vd_source=38c48d8008e903abbc6aa45a5cc63d8f)]
