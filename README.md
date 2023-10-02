@@ -93,6 +93,8 @@ In the directory of each dataset, there are detailed steps on how to train VDI a
 <img src="fig/taxonomy_cub.png" alt="" data-canonical-src="fig/exp_result_cub.png" width="93%"/>
 </p>
 
+*Domain taxonomy of **CUB-DT** with $18$ domains shown as leaf nodes. Note that leaf nodes are marked with black base and white text. For clarity we abbreviate domain names in the figure: Least Auklet (**LA**), Parakeet Auklet (**PA**), Red Winged Blackbird (**RWB**), Yellow Headed Blackbird (**YHB**), Lazuli Bunting (**LB**), Painted Bunting (**PB**), Bronzed Cowbird (**BC**), Shiny Cowbird (**SC**), Loggerhead Shrike (**LS**), Great Grey Shirke (**GGS**), Baird Sparrow (**BS**), Henslow's Sparrow (**HS**), Nelson's Sparrow (**NS**), Seaside Sparrow (**SS**), Canada Warbler (**CW**), Wilson's Warbler (**WW**), Chestnut-sided Warbler (**CSW**), Myrtle Warbler (**MW**).*
+
 
 
 ## Encoding Visualization
