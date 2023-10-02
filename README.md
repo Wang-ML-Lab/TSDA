@@ -56,8 +56,8 @@ conda install pytorch==1.11.0 torchvision==0.12.0 cudatoolkit=11.3 -c pytorch
 pip install -r requirements.txt
 ```
 
-## Code for Different Datasets
-In the directory of each dataset, there are detailed steps on how to train VDI and how to visualize the inferred domain indices.
+## Code
+In the directory of each dataset, there are detailed steps on how to train TSDA.
 * [Experiments on Toy Datasets](Toy)
 * [Experiments on Real Datasets](Real)
 
