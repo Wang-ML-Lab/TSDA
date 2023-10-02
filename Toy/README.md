@@ -3,7 +3,6 @@ If you have any questions, feel free to pose an issue or send an email to zihao.
 
 The code for TSDA is developed based on [CIDA](https://github.com/hehaodele/CIDA). [CIDA](https://github.com/hehaodele/CIDA) also provides many baseline implementations (e.g., DANN, MDD), which we used for performance comparasion in our paper. Please refer to its [code](https://github.com/hehaodele/CIDA) for details. For baseline GRDA, please refer to this [code](https://github.com/Wang-ML-Lab/GRDA).
 
-
 ## Toy
 ### How to Train on DT-14
 ```python
