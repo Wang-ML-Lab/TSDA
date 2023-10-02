@@ -88,6 +88,8 @@ In the directory of each dataset, there are detailed steps on how to train VDI a
 <img src="fig/taxonomy_imagenet.png" alt="" data-canonical-src="fig/exp_result_imagenet.png" width="95%"/>
 </p>
 
+*Domain taxonomy of **ImageNet-Attribute-DT** with 11 domains shown as leaf nodes. Note that leaf nodes are marked with black base and white text. Non-leaf nodes and their connection to leaf nodes are obtained from WordNet.*
+
 #### CUB-DT
 <p align="center">
 <img src="fig/taxonomy_cub.png" alt="" data-canonical-src="fig/exp_result_cub.png" width="93%"/>
