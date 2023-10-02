@@ -12,7 +12,7 @@ Tianyi Liu*, Zihao Xu*, Hao He, Guang-Yuan Hao, Guang-He Lee, Hao Wang<br>
 * [Theorem (Informal)](#theorem-informal-see-formal-definition-in-the-paper)
 * [Installation](#installation)
 * [Code for Different Datasets](#code-for-different-datasets)
-* [Quantitative Result](#quantitative-result)
+* [Quantitative Results](#quantitative-results)
 * [Related Works](#also-check-our-relevant-work)
 * [Reference](#reference)
 
@@ -23,7 +23,7 @@ For classical domain adaptation methods such as DANN, they enforce uniform align
 <img src="fig/example_taxonomy.png" alt="" data-canonical-src="fig/example_taxonomy.png" width="80%"/>
 </p>
 <p>
-    <em>Figure 1. An example of using domain taxonomy to break the uniform alignment. For our model, the middle representation for basset and Beagle should be more similar than the one for basset and tabby.</em>
+    <em>An example of using domain taxonomy to break the uniform alignment. For our model, the middle representation for basset and Beagle should be more similar than the one for basset and tabby.</em>
 </p>
 
 ## Method Overview
@@ -31,7 +31,7 @@ We build on the classic adversarial framework and introduce a novel taxonomist, 
 <p align="center">
 <img src="fig/model.png" alt="" data-canonical-src="fig/model.png" width="80%"/>
 </p>
-
+<!-- *Figure 2. The model structure.* -->
 
 ## Theorem (Informal, See Formal Definition in the Paper)
 <img align="right" src="fig/non_informative_taxonomy_new.png" width="33%">
@@ -61,7 +61,12 @@ In the directory of each dataset, there are detailed steps on how to train VDI a
 * [Experiments on Toy Datasets](Toy)
 * [Experiments on Real Datasets](Real)
 
-## Quantitative Result
+## Visualization of Experiment Result on DT-14
+<p align="center">
+<img src="fig/vis_exp_result_dt_14.png" alt="" data-canonical-src="fig/exp_result_imagenet.png" width="95%"/>
+</p>
+
+## Quantitative Results
 #### Toy Datasets: DT-14 and DT-40
 <p align="center">
 <img src="fig/exp_result_toy.png" alt="" data-canonical-src="fig/fig/exp_result_toy.png" width="70%"/>
@@ -77,6 +82,31 @@ In the directory of each dataset, there are detailed steps on how to train VDI a
 <img src="fig/exp_result_cub.png" alt="" data-canonical-src="fig/exp_result_cub.png" width="93%"/>
 </p>
 
+## Domain Taxonomy
+#### ImageNet-Attribute-DT
+<p align="center">
+<img src="fig/taxonomy_imagenet.png" alt="" data-canonical-src="fig/exp_result_imagenet.png" width="95%"/>
+</p>
+
+#### CUB-DT
+<p align="center">
+<img src="fig/taxonomy_cub.png" alt="" data-canonical-src="fig/exp_result_cub.png" width="93%"/>
+</p>
+
+
+
+## Encoding Visualization
+#### Imagnet-Attribute-DT
+<p align="center">
+<img src="fig/vis_encode_imagenet.png" alt="" data-canonical-src="fig/exp_result_imagenet.png" width="95%"/>
+</p>
+*TSDA's learned encoding e for 11 domains on ImageNet-Attribute-DT. Domains related to "dogs", e.g., "Basset" and "Beagle", contain encodings in the middle, while domains related to "cats", e.g., "Tabby“, contain encodings on both sides; this is consistent with the domain taxonomy in Figure x. Each domain contains 2 clusters because of the binary classification task.*
+
+#### CUB-DT
+<p align="center">
+<img src="fig/vis_encode_cub.png" alt="" data-canonical-src="fig/exp_result_cub.png" width="95%"/>
+</p>
+*TSDA's learned encoding e for 18 domains on CUB-DT. Domain "Least Auklet" (LA) and domain "Parakeet Auklet" (PA) are very different from all others in the domain taxonomy (Figure ), correspondingly their encodings are on the far right side, with most of them in the bottom-right corner. Note that each domain has 2 clusters associated with the binary classification labels*
 
 
 ## Also Check Our Relevant Work
