@@ -1,4 +1,4 @@
-# Taxonomy-Structured Domain Adaptation (TSDA) (under construction)
+# Taxonomy-Structured Domain Adaptation (TSDA)
 This repo contains the code for our ICML 2023 paper:<br>
 **Taxonomy-Structured Domain Adaptation**<br>
 Tianyi Liu*, Zihao Xu*, Hao He, Guang-Yuan Hao, Guang-He Lee, Hao Wang<br>
@@ -12,12 +12,15 @@ Tianyi Liu*, Zihao Xu*, Hao He, Guang-Yuan Hao, Guang-He Lee, Hao Wang<br>
 * [Theorem (Informal)](#theorem-informal-see-formal-definition-in-the-paper)
 * [Installation](#installation)
 * [Code for Different Datasets](#code-for-different-datasets)
+* [Visualization of Experiment Results on DT-14](#visualization-of-experiment-results-on-dt-14)
 * [Quantitative Results](#quantitative-results)
+* [Domain Taxonomy](#domain-taxonomy)
+* [Encoding Visualization](#encoding-visualization)
 * [Related Works](#also-check-our-relevant-work)
 * [Reference](#reference)
 
 ## Brief Introduction for TSDA
-For classical domain adaptation methods such as DANN, they enforce uniform alignment to boost the generalization ability of models. However, recent studies have shown that, such uniform alignment can harm domain adaptation performance. To deal with this problem, we incorporate domain taxonomy into domain adaptation process. With domain taxonomy, we can **break** the uniform alignment in domain adaptation. The equilibrium recovers the classic adversarial domain adaptation’s solution if given a non-informative domain taxonomy (e.g., a flat taxonomy where all leaf nodes connect to the root node) while yielding non-trivial results with other taxonomies. See Figure 1 for an example.
+For classical domain adaptation methods such as DANN, they enforce uniform alignment to boost the generalization ability of models. However, recent studies have shown that, such uniform alignment can harm domain adaptation performance. To deal with this problem, we incorporate domain taxonomy into domain adaptation process. With domain taxonomy, we can **break** the uniform alignment in domain adaptation. The equilibrium recovers the classic adversarial domain adaptation’s solution if given a non-informative domain taxonomy (e.g., a flat taxonomy where all leaf nodes connect to the root node) while yielding non-trivial results with other taxonomies. See the following figure for an example.
 
 <p align="center">
 <img src="fig/example_taxonomy.png" alt="" data-canonical-src="fig/example_taxonomy.png" width="80%"/>
@@ -56,12 +59,12 @@ conda install pytorch==1.11.0 torchvision==0.12.0 cudatoolkit=11.3 -c pytorch
 pip install -r requirements.txt
 ```
 
-## Code
+## Code for Different Datasets
 In the directory of each dataset, there are detailed steps on how to train TSDA.
 * [Experiments on Toy Datasets](Toy)
 * [Experiments on Real Datasets](Real)
 
-## Visualization of Experiment Result on DT-14
+## Visualization of Experiment Results on DT-14
 <p align="center">
 <img src="fig/vis_exp_result_dt_14.png" alt="" data-canonical-src="fig/exp_result_imagenet.png" width="95%"/>
 </p>
@@ -95,8 +98,7 @@ In the directory of each dataset, there are detailed steps on how to train TSDA.
 <img src="fig/taxonomy_cub.png" alt="" data-canonical-src="fig/exp_result_cub.png" width="93%"/>
 </p>
 
-*Domain taxonomy of **CUB-DT** with $18$ domains shown as leaf nodes. Note that leaf nodes are marked with black base and white text. For clarity we abbreviate domain names in the figure: Least Auklet (**LA**), Parakeet Auklet (**PA**), Red Winged Blackbird (**RWB**), Yellow Headed Blackbird (**YHB**), Lazuli Bunting (**LB**), Painted Bunting (**PB**), Bronzed Cowbird (**BC**), Shiny Cowbird (**SC**), Loggerhead Shrike (**LS**), Great Grey Shirke (**GGS**), Baird Sparrow (**BS**), Henslow's Sparrow (**HS**), Nelson's Sparrow (**NS**), Seaside Sparrow (**SS**), Canada Warbler (**CW**), Wilson's Warbler (**WW**), Chestnut-sided Warbler (**CSW**), Myrtle Warbler (**MW**).*
-
+*Domain taxonomy of **CUB-DT** with 18 domains shown as leaf nodes. Note that leaf nodes are marked with black base and white text. For clarity we abbreviate domain names in the figure: Least Auklet (**LA**), Parakeet Auklet (**PA**), Red Winged Blackbird (**RWB**), Yellow Headed Blackbird (**YHB**), Lazuli Bunting (**LB**), Painted Bunting (**PB**), Bronzed Cowbird (**BC**), Shiny Cowbird (**SC**), Loggerhead Shrike (**LS**), Great Grey Shirke (**GGS**), Baird Sparrow (**BS**), Henslow's Sparrow (**HS**), Nelson's Sparrow (**NS**), Seaside Sparrow (**SS**), Canada Warbler (**CW**), Wilson's Warbler (**WW**), Chestnut-sided Warbler (**CSW**), Myrtle Warbler (**MW**).*
 
 
 ## Encoding Visualization
@@ -116,7 +118,7 @@ In the directory of each dataset, there are detailed steps on how to train TSDA.
 
 
 ## Also Check Our Relevant Work
-<span id="paper_1">[1]**Domain-Indexing Variational Bayes: Interpretable Domain Index for Domain Adaptation**<br>
+<span id="paper_1">[1] **Domain-Indexing Variational Bayes: Interpretable Domain Index for Domain Adaptation**<br>
 Zihao Xu*, Guang-Yuan Hao*, Hao He, Hao Wang<br>
 *Eleventh International Conference on Learning Representations, 2023*<br>
 [[Paper](https://arxiv.org/abs/2302.02561)] [[OpenReview](https://openreview.net/forum?id=pxStyaf2oJ5&referrer=%5Bthe%20profile%20of%20Zihao%20Xu%5D(%2Fprofile%3Fid%3D~Zihao_Xu2))] [[PPT](https://shsjxzh.github.io/files/VDI_10_miniutes_2nd_version_to_pdf.pdf)] [[Talk (Youtube)](https://www.youtube.com/watch?v=xARD4VG19ec)] [[Talk (Bilibili)](https://www.bilibili.com/video/BV13N411w734/?vd_source=38c48d8008e903abbc6aa45a5cc63d8f)]
